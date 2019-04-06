@@ -1,4 +1,4 @@
-package com.example.dynamicfragmentproject.Fragments;
+package com.example.mbd2Android.Fragments;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -10,8 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.dynamicfragmentproject.R;
-import com.example.dynamicfragmentproject.ViewModels.MainViewModel;
+import com.example.mbd2Android.Models.Card;
+import com.example.mbd2Android.R;
+import com.example.mbd2Android.ViewModels.MainViewModel;
 
 public class DetailFragment extends Fragment {
 
@@ -27,15 +28,15 @@ public class DetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_detail, container, false);
 
-        final Observer<String> nameObserver = new Observer<String>() {
+        final Observer<Card> cardObserver = new Observer<Card>() {
             @Override
-            public void onChanged(@Nullable final String newName) {
+            public void onChanged(@Nullable final Card newCard) {
                 TextView textView = (TextView) getActivity().findViewById(R.id.textView);
-                textView.setText(newName);
+                textView.setText(newCard.getName());
             }
         };
 
-        model.getSelectedName().observe(this, nameObserver);
+        model.getSelectedCard().observe(this, cardObserver);
 
         return view;
     }

@@ -1,10 +1,10 @@
-package com.example.dynamicfragmentproject;
+package com.example.mbd2Android;
 
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.dynamicfragmentproject.Fragments.OverviewFragment;
+import com.example.mbd2Android.Fragments.OverviewFragment;
 
 public class MainActivity extends AppCompatActivity {
 

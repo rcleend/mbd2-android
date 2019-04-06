@@ -7,13 +7,16 @@
 
     <fragment
         android:id="@+id/overview_fragment"
-        class="com.example.dynamicfragmentproject.Fragments.OverviewFragment"
+        class="com.example.mbd2Android.Fragments.OverviewFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_bg_selector"
         android:layout_weight="1"/>
     <fragment
         android:id="@+id/detail_fragment"
-        class="com.example.dynamicfragmentproject.Fragments.DetailFragment"
+        class="com.example.mbd2Android.Fragments.DetailFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"/>

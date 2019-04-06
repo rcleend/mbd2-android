@@ -1,4 +1,4 @@
-package com.example.dynamicfragmentproject;
+package com.example.mbd2Android;
 
 import org.junit.Test;
 
