@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">mbd2-android</string>
+    <string name="API_URL">https://mtg.dan-it.nl/api</string>
 </resources>

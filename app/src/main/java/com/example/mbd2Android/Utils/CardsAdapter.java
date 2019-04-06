@@ -10,15 +10,15 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
-import com.example.mbd2Android.ApplicationController;
 import com.example.mbd2Android.Models.Card;
 import com.example.mbd2Android.R;
 
-public class CardsAdapter extends ArrayAdapter<Card> {
-    private ImageLoader imageLoader = ApplicationController.getInstance().getImageLoader();
+import java.util.ArrayList;
 
-    public CardsAdapter(Context context, Card[] cards) {
-        super(context, 0, cards);
+public class CardsAdapter extends ArrayAdapter<Card> {
+
+    public CardsAdapter(Context context) {
+        super(context, 0);
     }
 
     @Override
@@ -32,7 +32,6 @@ public class CardsAdapter extends ArrayAdapter<Card> {
         TextView cardName = convertView.findViewById(R.id.name);
 
         cardName.setText(card.getName());
-        cardThumbnail.setImageUrl(card.getImageUrl(), imageLoader);
         Log.d("Card", cardThumbnail.toString());
 
         return convertView;
