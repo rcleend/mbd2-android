@@ -5,11 +5,9 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -27,6 +25,12 @@ public class OverviewFragment extends Fragment {
     private MainViewModel viewModel;
     private ArrayAdapter<Card> cardsAdapter;
 
+    /**
+     * onCreate instantieert haalt de viewModel op en maakt een nieuwe CardAdapter aan.
+     * Hierna wordt er een cardObserver toegevoegd aan de cardAdapter.
+     *
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,15 @@ public class OverviewFragment extends Fragment {
         this.setupCardsObserver();
     }
 
+    /**
+     * onCreateView biedt een inflater voor de layout.
+     * Ook wordt hier de setup voor de listView geinstantieerd.
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overview, container, false);
@@ -43,6 +56,11 @@ public class OverviewFragment extends Fragment {
         return view;
     }
 
+    /**
+     * setupListView instantieerd de listView, en een setup voor de onItemClickListener en loadMoreButton.
+     *
+     * @param view
+     */
     private void setupListView(View view) {
         ListView listView = view.findViewById(R.id.list_view);
         listView.setAdapter(this.cardsAdapter);
@@ -56,6 +74,11 @@ public class OverviewFragment extends Fragment {
         listView.addFooterView(loadMoreButton);
     }
 
+    /**
+     * setupLoadMoreButton instantieert de loadMoreButton onderaan de listView.
+     *
+     * @return
+     */
     private Button setupLoadMoreButton() {
         Button loadMoreButton = new Button(this.getContext());
         loadMoreButton.setText("Load More");
@@ -63,6 +86,11 @@ public class OverviewFragment extends Fragment {
         return loadMoreButton;
     }
 
+    /**
+     * setupLoadMoreButtonListener instanteert een onClickListener voor de loadMoreButton
+     *
+     * @return
+     */
     private View.OnClickListener setupLoadMoreButtonListener() {
         return new View.OnClickListener() {
             @Override
@@ -72,6 +100,12 @@ public class OverviewFragment extends Fragment {
         };
     }
 
+    /**
+     * setupItemClickListener instanteert een OnItemClickListener voor de listView.
+     * Wanneer er om een listItem wordt geklikt wordt er een navigateOnPaneFragment() aangeroepen.
+     *
+     * @return
+     */
     private AdapterView.OnItemClickListener setupItemClickListener() {
         return new AdapterView.OnItemClickListener() {
             @Override
@@ -82,12 +116,16 @@ public class OverviewFragment extends Fragment {
         };
     }
 
+    /**
+     * setupCardsObserver instantieert een nieuwe observer voor de cards in de viewModel.
+     * Wanneer er nu een wijzging plaatsvind in de cards wordt het automatisch geupdate.
+     * Het is dus reactief.
+     */
     private void setupCardsObserver() {
         final Observer<List<Card>> cardsObserver = new Observer<List<Card>>() {
             @Override
             public void onChanged(@Nullable final List<Card> newCards) {
                 cardsAdapter.addAll(newCards);
-                Log.d("NEEE", "no");
                 cardsAdapter.notifyDataSetChanged();
             }
         };
@@ -96,6 +134,10 @@ public class OverviewFragment extends Fragment {
         this.viewModel.getCards().observe(this, cardsObserver);
     }
 
+    /**
+     * navigateOnePaneFragment checkt of dat het apparaat in landscape of portrait modes is.
+     * Wanneer het in portrait modes is vervangt die de overviewFragment met een detailFragment.
+     */
     private void navigateOnePaneFragment() {
         boolean isDualPane = getResources().getBoolean(R.bool.dual_pane);
         if (!isDualPane) {

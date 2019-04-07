@@ -1,7 +1,6 @@
 package com.example.mbd2Android.Utils;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +41,7 @@ public class CardsAdapter extends ArrayAdapter<Card> {
 
     private void SetImage(Card card, NetworkImageView cardThumbnail) {
         final String url = card.getImageUrl();
-        ImageLoader imageLoader = RequestQueueSingleton.getInstance(getContext()).getImageLoader();
+        ImageLoader imageLoader = VolleySingleton.getInstance(getContext()).getImageLoader();
         imageLoader.get(url, ImageLoader.getImageListener(cardThumbnail, R.drawable.mtg_back, android.R.drawable.ic_dialog_alert));
         cardThumbnail.setImageUrl(url, imageLoader);
     }

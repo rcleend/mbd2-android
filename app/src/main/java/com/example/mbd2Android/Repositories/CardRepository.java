@@ -11,7 +11,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.example.mbd2Android.Models.Card;
 import com.example.mbd2Android.R;
-import com.example.mbd2Android.Utils.RequestQueueSingleton;
+import com.example.mbd2Android.Utils.VolleySingleton;
 
 import org.json.*;
 
@@ -23,13 +23,13 @@ public class CardRepository {
 
 
     private SharedPreferences sharedPreferences;
-    private RequestQueueSingleton requestQueueSingleton;
+    private VolleySingleton volleySingleton;
 
     private List<Card> allCards;
 
     public CardRepository(Application application) {
         this.sharedPreferences = application.getSharedPreferences(application.getResources().getString(R.string.myPreferences), Context.MODE_PRIVATE);
-        this.requestQueueSingleton = RequestQueueSingleton.getInstance(application);
+        this.volleySingleton = VolleySingleton.getInstance(application);
         this.allCards = new ArrayList<>();
     }
 
@@ -42,9 +42,9 @@ public class CardRepository {
     public void getCardsFromApi(int page, final VolleyResponseListener listener) {
         int pageLimit = sharedPreferences.getInt("cardLimit", 12);
         String parameters = "?page=" + page + "&limit=" + pageLimit;
-        String url = this.requestQueueSingleton.getApiURL() + "/cards" + parameters;
+        String url = this.volleySingleton.getApiURL() + "/cards" + parameters;
 
-        this.requestQueueSingleton.addToRequestQueue(this.createNewJsonArrayRequest(url, listener));
+        this.volleySingleton.addToRequestQueue(this.createNewJsonArrayRequest(url, listener));
     }
 
 

@@ -10,23 +10,31 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.example.mbd2Android.R;
 
-public class RequestQueueSingleton {
+public class VolleySingleton {
 
-    private static RequestQueueSingleton requestQueueSingleton;
+    private static VolleySingleton volleySingleton;
     private static Context context;
 
     private String ApiURL;
     private RequestQueue requestQueue;
     private ImageLoader imageLoader;
 
-
-    private RequestQueueSingleton(Context ctx) {
+    /**
+     * De VolleySingelton is een singleton instantie van Volley.
+     * Volley biedt o.a. asynchroon http request mogelijkheden en een imageLoader met cache.
+     * @param ctx
+     */
+    private VolleySingleton(Context ctx) {
         context = ctx;
         requestQueue = getRequestQueue();
         this.ApiURL = context.getResources().getString(R.string.API_URL);
         this.imageLoader = new ImageLoader(requestQueue, createImageCache());
     }
 
+    /**
+     * createImageCache instantieert een imageCache.
+     * @return
+     */
     private ImageLoader.ImageCache createImageCache() {
         return new ImageLoader.ImageCache() {
             private final LruCache<String, Bitmap> cache = new LruCache<String, Bitmap>(100);
@@ -43,11 +51,12 @@ public class RequestQueueSingleton {
         };
     }
 
-    public static synchronized RequestQueueSingleton getInstance(Context context) {
-        if (requestQueueSingleton == null) {
-            requestQueueSingleton = new RequestQueueSingleton(context);
+
+    public static synchronized VolleySingleton getInstance(Context context) {
+        if (volleySingleton == null) {
+            volleySingleton = new VolleySingleton(context);
         }
-        return requestQueueSingleton;
+        return volleySingleton;
     }
 
     public void addToRequestQueue(Request req) {

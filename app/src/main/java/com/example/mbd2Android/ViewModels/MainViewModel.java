@@ -17,16 +17,24 @@ public class MainViewModel extends AndroidViewModel {
     private MutableLiveData<Card> selectedCard = new MutableLiveData<>();
     private MutableLiveData<List<Card>> cards = new MutableLiveData<>();
 
-
     private int page = 1;
     private CardRepository cardRepo;
 
+    /**
+     * De MainViewModel is verantwoordelijk voor de logica achter de mainActivity
+     *
+     * @param application
+     */
     public MainViewModel(Application application) {
         super(application);
         this.cardRepo = new CardRepository(application);
         this.loadCards();
     }
 
+    /**
+     * loadCards haalt via de cardRepo een lijst met kaarten op.
+     * Dit gebeurt asynchroon. Wanneer de resultaten zijn opgehaald wordt de onResponse functie uitgevoerd.
+     */
     public void loadCards() {
         this.cardRepo.getCardsFromApi(this.page, new CardRepository.VolleyResponseListener() {
             @Override
@@ -46,6 +54,10 @@ public class MainViewModel extends AndroidViewModel {
     }
 
 
+    /**
+     * createSharingIntent creeert een nieuwe ACTION_SEND intent met daarin de data van de selectedCard.
+     * @return
+     */
     public Intent createSharingIntent() {
         String name = selectedCard.getValue().getName();
         String url = getApplication().getResources().getString(R.string.shareUrl) + selectedCard.getValue().getId();
@@ -57,6 +69,7 @@ public class MainViewModel extends AndroidViewModel {
 
         return sharingIntent;
     }
+
 
     public MutableLiveData<Card> getSelectedCard() {
         return this.selectedCard;
