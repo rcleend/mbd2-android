@@ -33,10 +33,6 @@ public class OverviewFragment extends Fragment {
         this.viewModel = ViewModelProviders.of(this.getActivity()).get(MainViewModel.class);
         this.cardsAdapter = new CardsAdapter(this.getContext());
 
-        if (this.viewModel.getCards().getValue() != null) {
-            this.cardsAdapter.addAll(this.viewModel.getCards().getValue());
-        }
-
         this.setupCardsObserver();
     }
 
@@ -96,6 +92,7 @@ public class OverviewFragment extends Fragment {
             }
         };
 
+        this.viewModel.setAllCards();
         this.viewModel.getCards().observe(this, cardsObserver);
     }
 
