@@ -3,6 +3,7 @@ package com.example.mbd2Android.ViewModels;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.MutableLiveData;
+import android.content.Intent;
 import android.util.Log;
 
 import com.android.volley.VolleyError;
@@ -57,6 +58,9 @@ public class MainViewModel extends AndroidViewModel {
             }
             cards.setValue(cardList);
 
+            if (this.selectedCard.getValue() == null)
+                setSelectedCard(cardList.get(0));
+
         } catch (JSONException e) {
             Log.e("ERROR", e.toString());
         }
@@ -73,7 +77,19 @@ public class MainViewModel extends AndroidViewModel {
             Log.e("ERROR", e.toString());
             return null;
         }
-       return card;
+        return card;
+    }
+
+    public Intent createSharingIntent() {
+        String name = selectedCard.getValue().getName();
+        String imageUrl = selectedCard.getValue().getImageUrl();
+        String message = "Look at this MTG card! " + name + ":\n" + imageUrl;
+
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
+
+        return sharingIntent;
     }
 
     public MutableLiveData<Card> getSelectedCard() {

@@ -2,9 +2,13 @@ package com.example.mbd2Android.Fragments;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +37,7 @@ public class DetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_detail, container, false);
         this.setupCardObserver();
+        this.setupShareButton(view);
 
         return view;
     }
@@ -41,28 +46,33 @@ public class DetailFragment extends Fragment {
         final Observer<Card> cardObserver = new Observer<Card>() {
             @Override
             public void onChanged(@Nullable final Card newCard) {
-                SetContent(newCard);
+                setContent(newCard);
             }
         };
         this.viewmodel.getSelectedCard().observe(this, cardObserver);
     }
 
-    private void SetContent(Card card) {
-        boolean mHasOnePane = !getResources().getBoolean(R.bool.dual_pane);
-        if (mHasOnePane) {
-            TextView textView = getActivity().findViewById(R.id.textView);
-            textView.setText(card.getName());
-        }
-
+    private void setContent(Card card) {
         NetworkImageView cardThumbnail = getActivity().findViewById(R.id.detailImage);
-        this.SetImage(card, cardThumbnail);
+        this.setImage(card, cardThumbnail);
     }
 
-    private void SetImage(Card card, NetworkImageView cardThumbnail) {
+    private void setImage(Card card, NetworkImageView cardThumbnail) {
         final String url = card.getImageUrl();
         ImageLoader imageLoader = RequestQueueSingleton.getInstance(getContext()).getImageLoader();
         imageLoader.get(url, ImageLoader.getImageListener(cardThumbnail, android.R.drawable.ic_menu_report_image, android.R.drawable.ic_dialog_alert));
         cardThumbnail.setImageUrl(url, imageLoader);
+    }
+
+    private void setupShareButton(View view) {
+        FloatingActionButton shareButton = view.findViewById(R.id.shareButton);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sharingIntent = viewmodel.createSharingIntent();
+                startActivity(sharingIntent);
+            }
+        });
     }
 
 }
