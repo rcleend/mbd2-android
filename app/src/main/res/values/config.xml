@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="bool" name="dual_pane">false</item>
+    <item name="dual_pane" type="bool">false</item>
+    <string name="myPreferences">myPreferences</string>
+    <string name="shareUrl">http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=</string>
+    <string name="API_URL">https://mtg.dan-it.nl/api</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
 </resources>

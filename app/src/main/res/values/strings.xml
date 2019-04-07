@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">mbd2-android</string>
+    <string name="app_name">Magic The Gathering</string>
+    <string name="title_activity_preferences">Preferences</string>
+    <string name="save_button_text">Save</string>
+    <string name="limit_label_text">Limit Loaded Cards</string>
+    <string name="permlab_areYouAwesome">are you awesome</string>
+    <string name="permdesc_areYouAwesome">This app requires you te be awesome.</string>
 </resources>

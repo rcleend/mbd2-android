@@ -6,45 +6,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Card" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="NEEE" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e68fdb3-8c2d-4372-bbf0-d5c1ada8dacd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/WebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg_hover.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_android_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicFragmentProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/dynamicfragmentproject/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/mbd2Android/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dynamicfragmentproject/Fragments/DetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dynamicfragmentproject/Fragments/OverviewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dynamicfragmentproject/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dynamicfragmentproject/ViewModels/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/dynamicfragmentproject/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/mbd2Android/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbd2-android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mbd2-android.iml" afterDir="false" />
-    </list>
+    <list default="true" id="3e68fdb3-8c2d-4372-bbf0-d5c1ada8dacd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,48 +53,53 @@
     <session id="403604244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bat" value="1" />
-          <entry key="gradle" value="7" />
+          <entry key="gradle" value="10" />
           <entry key="gradlew" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="32" />
+          <entry key="java" value="78" />
           <entry key="properties" value="2" />
-          <entry key="xml" value="36" />
+          <entry key="svg" value="1" />
+          <entry key="xml" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="7" />
+          <entry key="Groovy" value="10" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="32" />
+          <entry key="JAVA" value="78" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="36" />
+          <entry key="SVG" value="1" />
+          <entry key="XML" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="56" />
-          <entry key="gradle" value="23" />
-          <entry key="java" value="7401" />
-          <entry key="xml" value="1005" />
+          <entry key="dummy" value="85" />
+          <entry key="gradle" value="49" />
+          <entry key="java" value="49365" />
+          <entry key="txt" value="45" />
+          <entry key="xml" value="5865" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="23" />
-          <entry key="JAVA" value="7401" />
-          <entry key="PLAIN_TEXT" value="56" />
-          <entry key="XML" value="1005" />
+          <entry key="Groovy" value="49" />
+          <entry key="JAVA" value="49365" />
+          <entry key="PLAIN_TEXT" value="130" />
+          <entry key="XML" value="5865" />
         </counts>
       </usages-collector>
     </session>
@@ -135,10 +107,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/PreferencesViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#545#605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="-634">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,89 +134,132 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="465">
+              <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
               <folding>
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#2430#2431#0" expanded="true" />
+                <element signature="e#2470#2471#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
+                <element signature="e#2633#2634#0" expanded="true" />
+                <element signature="e#2666#2667#0" expanded="true" />
+                <element signature="e#2698#2699#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="1991">
+              <caret line="138" column="95" selection-start-line="138" selection-start-column="95" selection-end-line="138" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2918#3073#0" expanded="true" />
+                <element signature="e#3072#3073#0" expanded="true" />
+                <element signature="e#3284#3582#0" expanded="true" />
+                <element signature="e#3581#3582#0" expanded="true" />
+                <element signature="e#3886#4133#0" expanded="true" />
+                <element signature="e#4132#4133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1703#1874#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#2858#3095#0" expanded="true" />
+                <element signature="e#3094#3095#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/VolleySingleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1231#1247#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2208#2209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            <state relative-caret-position="105">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1025#1085#0" expanded="true" />
+                <element signature="e#1808#2167#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#1990#2209#0" expanded="true" />
+                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#3253#3254#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/PreferencesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="112" selection-start-line="83" selection-start-column="112" selection-end-line="83" selection-end-column="112" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2212#2361#0" expanded="true" />
+                <element signature="e#2360#2361#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -238,8 +269,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
       </list>
@@ -256,33 +287,50 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/fragment_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/card_list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ImageLoader.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg_hover.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg_selector.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/WebService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Application.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Main.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/mbd2Android/ExampleInstrumentedTest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ImageLoaderTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/WebService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ParseJsonDataClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/fragment_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_preference.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/PreferenceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/preferences_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preference.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/config.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preference_OLD.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preferences.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/RequestQueueSingleton.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/InputFilters/InputFilterMinMax.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_preferences.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/PreferencesViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/PreferencesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/VolleySingleton.java" />
       </list>
     </option>
   </component>
@@ -319,49 +367,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="mbd2Android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mbd2Android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Fragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-              <item name="activity_main" type="c431d0b8:AndroidResGroupNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="mipmap" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -422,6 +427,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mbd2Android" type="462c0819:PsiDirectoryNode" />
+              <item name="Fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mbd2Android" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mbd2Android" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mbd2Android" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -445,51 +480,6 @@
             <path>
               <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-land" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values-land" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbd2-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbd2-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -501,12 +491,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="androima&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/AndroidManifest.xml&#10;mainac&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/MainActivity.java&#10;mani&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/AndroidManifest.xml&#10;app&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Application.java&#10;mai&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/MainActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="mainvi&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java&#10;repo&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java&#10;over&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/res/layout/fragment_overview.xml&#10;pre&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/PreferencesActivity.java&#10;pr&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/res/layout/content_preferences.xml&#10;Pref&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/PreferencesActivity.java&#10;que&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Utils/RequestQueueSingleton.java&#10;carr&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java&#10;car&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java&#10;ma&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java&#10;we&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Utils/WebService.java&#10;androima&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/AndroidManifest.xml&#10;mainac&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/MainActivity.java&#10;mani&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/AndroidManifest.xml&#10;app&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/Application.java&#10;mai&#9;FILE&#9;file:///home/rcleende/AndroidStudioProjects/mbd2-android/app/src/main/java/com/example/mbd2Android/MainActivity.java" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="d5360fd0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1554550877140" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.example.mbd2Android" />
+      <recent name="com.example.dynamicfragmentproject" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -607,7 +612,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25240642" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25240642" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -615,110 +620,37 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4983957" weight="0.32929516" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49518716" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49946523" weight="0.32929516" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4973262" weight="0.32819384" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50481284" side_tool="true" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49679145" weight="0.32929516" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49625668" weight="0.32929516" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.47860962" weight="0.34140968" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4983957" weight="0.32929516" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49037433" visible="true" weight="0.32599118" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5096257" side_tool="true" visible="true" weight="0.32599118" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.48342246" weight="0.32929516" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" sideWeight="0.49946523" weight="0.32929516" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49465242" weight="0.32929516" />
       <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49946523" weight="0.32929516" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49786097" weight="0.32929516" />
       <window_info anchor="right" id="Assistant" order="0" weight="0.32994652" />
       <window_info anchor="right" id="Device File Explorer" order="1" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32994652" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Preview" order="6" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.32994652" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DynamicFragmentProject.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DynamicFragmentProject.iml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-land/config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/card_list_item.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1029#1296#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1577#1868#0" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -733,24 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/WebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -790,94 +704,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ImageLoaderTest.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/WebService.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ParseJsonDataClass.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/loader.svg" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Activities/PreferencesActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_preference.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/PreferenceActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/preferences_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preference_OLD.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preferences.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_list_item.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="457">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/InputFilters/InputFilterMinMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_preferences.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="266">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_overview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/DetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1703#1874#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#2858#3095#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Fragments/OverviewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1991">
+          <caret line="138" column="95" selection-start-line="138" selection-start-column="95" selection-end-line="138" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2918#3073#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3284#3582#0" expanded="true" />
+            <element signature="e#3581#3582#0" expanded="true" />
+            <element signature="e#3886#4133#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Models/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/PreferencesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="112" selection-start-line="83" selection-start-column="112" selection-end-line="83" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2212#2361#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="-634">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/LruBitmapCache.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/PreferencesViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="105">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#545#605#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/ImageLoaderTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/ViewModels/MainViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="465">
+          <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+            <element signature="e#2666#2667#0" expanded="true" />
+            <element signature="e#2698#2699#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/VolleySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1231#1247#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Utils/CardsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="630">
+          <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mbd2Android/Repositories/CardRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1025#1085#0" expanded="true" />
+            <element signature="e#1808#2167#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#1990#2209#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#3253#3254#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
