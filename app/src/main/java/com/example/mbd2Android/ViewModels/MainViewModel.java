@@ -22,7 +22,7 @@ public class MainViewModel extends AndroidViewModel {
     private MutableLiveData<Card> selectedCard = new MutableLiveData<>();
     private MutableLiveData<List<Card>> cards = new MutableLiveData<>();
 
-    private int page = 0;
+    private int page = 1;
     private String searchQuery = "";
 
     private CardRepository cardRepo;
@@ -44,20 +44,22 @@ public class MainViewModel extends AndroidViewModel {
             @Override
             public void onResponse(Object response) {
                 JSONArray responseArray = (JSONArray) response;
-                parseJsonArrayResponse(responseArray);
+                List<Card> cardList = parseJsonArrayResponse(responseArray);
+                cards.setValue(cardList);
+                page++;
             }
         });
     }
 
-    private void parseJsonArrayResponse(JSONArray responseArray) {
+
+    private List<Card> parseJsonArrayResponse(JSONArray responseArray) {
+        List<Card> cardList = new ArrayList<>();
         try {
-            List<Card> cardList = new ArrayList<>();
             for (int i = 0; i < responseArray.length(); i++) {
                 JSONObject jsonCard = responseArray.getJSONObject(i);
                 Card card = createCardFromJson(jsonCard);
                 cardList.add(card);
             }
-            cards.setValue(cardList);
 
             if (this.selectedCard.getValue() == null)
                 setSelectedCard(cardList.get(0));
@@ -65,6 +67,7 @@ public class MainViewModel extends AndroidViewModel {
         } catch (JSONException e) {
             Log.e("ERROR", e.toString());
         }
+        return cardList;
     }
 
     private Card createCardFromJson(JSONObject jsonCard) {
@@ -92,9 +95,6 @@ public class MainViewModel extends AndroidViewModel {
 
         return sharingIntent;
     }
-
-
-
 
     public MutableLiveData<Card> getSelectedCard() {
         return this.selectedCard;

@@ -1,41 +1,28 @@
 package com.example.mbd2Android.Repositories;
 
 import android.app.Application;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
-import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.example.mbd2Android.MainActivity;
-import com.example.mbd2Android.Models.Card;
 import com.example.mbd2Android.R;
 import com.example.mbd2Android.Utils.RequestQueueSingleton;
 
 import org.json.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class CardRepository {
 
-    private int pageLimit;
 
+    private SharedPreferences sharedPreferences;
     private RequestQueueSingleton requestQueueSingleton;
-    private LiveData<List<Card>> cards;
 
     public CardRepository(Application application) {
-        SharedPreferences sharedPreferences = application.getSharedPreferences(application.getResources().getString(R.string.myPreferences), Context.MODE_PRIVATE);
+        this.sharedPreferences = application.getSharedPreferences(application.getResources().getString(R.string.myPreferences), Context.MODE_PRIVATE);
         this.requestQueueSingleton = RequestQueueSingleton.getInstance(application);
-
-        this.pageLimit = sharedPreferences.getInt("cardLimit", 12);
     }
 
     public interface VolleyResponseListener {
@@ -45,12 +32,16 @@ public class CardRepository {
     }
 
     public void getCardsFromApi(int page, String searchQuery, final VolleyResponseListener listener) {
+        int pageLimit = sharedPreferences.getInt("cardLimit", 12);
         String parameters = "?page=" + page + "&limit=" + pageLimit + "&query=" + searchQuery;
         String url = this.requestQueueSingleton.getApiURL() + "/cards" + parameters;
 
-        final List<Card> cardList = new ArrayList<>();
+        this.requestQueueSingleton.addToRequestQueue(this.createNewJsonArrayRequest(url, listener));
+    }
 
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest
+
+    private JsonArrayRequest createNewJsonArrayRequest(String url, final VolleyResponseListener listener) {
+        return new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 
                     @Override
@@ -64,12 +55,5 @@ public class CardRepository {
                         listener.onError(error);
                     }
                 });
-
-        this.requestQueueSingleton.addToRequestQueue(jsonArrayRequest);
     }
-
-    public LiveData<List<Card>> getCards() {
-        return this.cards;
-    }
-
 }

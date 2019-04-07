@@ -5,11 +5,14 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.mbd2Android.Models.Card;
@@ -28,23 +31,49 @@ public class OverviewFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.viewModel = ViewModelProviders.of(this.getActivity()).get(MainViewModel.class);
+        this.cardsAdapter = new CardsAdapter(this.getContext());
+
+        if (this.viewModel.getCards().getValue() != null) {
+            this.cardsAdapter.addAll(this.viewModel.getCards().getValue());
+        }
+
+        this.setupCardsObserver();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overview, container, false);
         this.setupListView(view);
-        this.setupCardsObserver();
         return view;
     }
 
     private void setupListView(View view) {
-        this.cardsAdapter = new CardsAdapter(this.getContext());
         ListView listView = view.findViewById(R.id.list_view);
         listView.setAdapter(this.cardsAdapter);
 
+
         AdapterView.OnItemClickListener mMessageClickedHandler = setupItemClickListener();
         listView.setOnItemClickListener(mMessageClickedHandler);
+
+
+        Button loadMoreButton = setupLoadMoreButton();
+        listView.addFooterView(loadMoreButton);
+    }
+
+    private Button setupLoadMoreButton() {
+        Button loadMoreButton = new Button(this.getContext());
+        loadMoreButton.setText("Load More");
+        loadMoreButton.setOnClickListener(setupLoadMoreButtonListener());
+        return loadMoreButton;
+    }
+
+    private View.OnClickListener setupLoadMoreButtonListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewModel.loadCards();
+            }
+        };
     }
 
     private AdapterView.OnItemClickListener setupItemClickListener() {
@@ -62,6 +91,7 @@ public class OverviewFragment extends Fragment {
             @Override
             public void onChanged(@Nullable final List<Card> newCards) {
                 cardsAdapter.addAll(newCards);
+                Log.d("NEEE", "no");
                 cardsAdapter.notifyDataSetChanged();
             }
         };
