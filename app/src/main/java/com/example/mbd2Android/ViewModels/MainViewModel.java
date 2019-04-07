@@ -2,11 +2,10 @@ package com.example.mbd2Android.ViewModels;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
 import android.util.Log;
 
+import com.android.volley.VolleyError;
 import com.example.mbd2Android.Models.Card;
 import com.example.mbd2Android.Repositories.CardRepository;
 
@@ -36,32 +35,45 @@ public class MainViewModel extends AndroidViewModel {
     public void loadCards() {
         this.cardRepo.getCardsFromApi(this.page, this.searchQuery, new CardRepository.VolleyResponseListener() {
             @Override
-            public void onError(String message) {
-
+            public void onError(VolleyError error) {
+                Log.e("ERROR", error.toString());
             }
 
             @Override
             public void onResponse(Object response) {
                 JSONArray responseArray = (JSONArray) response;
-                try {
-                    List<Card> cardList = new ArrayList<>();
-                    for (int i = 0; i < responseArray.length(); i++) {
-                        JSONObject jsonCard = responseArray.getJSONObject(i);
-
-                        String id = jsonCard.getString("id");
-                        String name = jsonCard.getString("name");
-                        String imageUrl = jsonCard.getString("imageUrl");
-                        Card card = new Card(id, name, imageUrl);
-                        Log.d("CARD", card.getName());
-                        cardList.add(card);
-                    }
-                    cards.setValue(cardList);
-
-                } catch (JSONException e) {
-                    Log.e("ERROOOR", e.toString());
-                }
+                parseJsonArrayResponse(responseArray);
             }
         });
+    }
+
+    private void parseJsonArrayResponse(JSONArray responseArray) {
+        try {
+            List<Card> cardList = new ArrayList<>();
+            for (int i = 0; i < responseArray.length(); i++) {
+                JSONObject jsonCard = responseArray.getJSONObject(i);
+                Card card = createCardFromJson(jsonCard);
+                cardList.add(card);
+            }
+            cards.setValue(cardList);
+
+        } catch (JSONException e) {
+            Log.e("ERROR", e.toString());
+        }
+    }
+
+    private Card createCardFromJson(JSONObject jsonCard) {
+        Card card;
+        try {
+            String id = jsonCard.getString("id");
+            String name = jsonCard.getString("name");
+            String imageUrl = jsonCard.getString("imageUrl");
+            card = new Card(id, name, imageUrl);
+        } catch (JSONException e) {
+            Log.e("ERROR", e.toString());
+            return null;
+        }
+       return card;
     }
 
     public MutableLiveData<Card> getSelectedCard() {
@@ -72,6 +84,8 @@ public class MainViewModel extends AndroidViewModel {
         this.selectedCard.setValue(selectedCard);
     }
 
-    public MutableLiveData<List<Card>> getCards() { return this.cards; }
+    public MutableLiveData<List<Card>> getCards() {
+        return this.cards;
+    }
 
 }

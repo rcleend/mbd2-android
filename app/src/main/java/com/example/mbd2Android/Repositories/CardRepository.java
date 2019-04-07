@@ -29,12 +29,10 @@ public class CardRepository {
 
     public CardRepository(Application application) {
         this.requestQueueSingleton = RequestQueueSingleton.getInstance(application);
-//        this.cards.setValue(getCardsFromApi(1,""));
     }
 
     public interface VolleyResponseListener {
-        void onError(String message);
-
+        void onError(VolleyError error);
         void onResponse(Object response);
     }
 
@@ -55,8 +53,7 @@ public class CardRepository {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // TODO: Handle error
-                        Log.e("RESPONSE", error.toString());
+                        listener.onError(error);
                     }
                 });
 

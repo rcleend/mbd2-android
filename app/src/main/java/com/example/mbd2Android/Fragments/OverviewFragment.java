@@ -38,43 +38,42 @@ public class OverviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overview, container, false);
         this.setupListView(view);
-
-        final Observer<List<Card>> cardsObserver = new Observer<List<Card>>() {
-            @Override
-            public void onChanged(@Nullable final List<Card> newCards) {
-                cardsAdapter.clear();
-                cardsAdapter.addAll(newCards);
-                cardsAdapter.notifyDataSetChanged();
-
-                Log.d("DEBUGG", "changinnnng");
-            }
-        };
-
-        viewModel.getCards().observe(this, cardsObserver);
-
+        this.setupCardsObserver();
         return view;
     }
 
-    public void setupListView(View view) {
+    private void setupListView(View view) {
         this.cardsAdapter = new CardsAdapter(this.getContext());
         ListView listView = view.findViewById(R.id.list_view);
         listView.setAdapter(this.cardsAdapter);
 
-        AdapterView.OnItemClickListener mMessageClickedHandler = setupItemClickListener(this.cardsAdapter);
+        AdapterView.OnItemClickListener mMessageClickedHandler = setupItemClickListener();
         listView.setOnItemClickListener(mMessageClickedHandler);
     }
 
-    public AdapterView.OnItemClickListener setupItemClickListener(final ArrayAdapter<Card> adapter) {
+    private AdapterView.OnItemClickListener setupItemClickListener() {
         return new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                viewModel.setSelectedCard(adapter.getItem(position));
+                viewModel.setSelectedCard(cardsAdapter.getItem(position));
                 navigateOnePaneFragment();
             }
         };
     }
 
-    public void navigateOnePaneFragment() {
+    private void setupCardsObserver() {
+        final Observer<List<Card>> cardsObserver = new Observer<List<Card>>() {
+            @Override
+            public void onChanged(@Nullable final List<Card> newCards) {
+                cardsAdapter.addAll(newCards);
+                cardsAdapter.notifyDataSetChanged();
+            }
+        };
+
+        this.viewModel.getCards().observe(this, cardsObserver);
+    }
+
+    private void navigateOnePaneFragment() {
         boolean isDualPane = getResources().getBoolean(R.bool.dual_pane);
         if (!isDualPane) {
             DetailFragment fragment = new DetailFragment();
