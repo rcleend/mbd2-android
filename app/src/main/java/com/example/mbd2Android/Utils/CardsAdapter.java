@@ -14,6 +14,10 @@ import com.example.mbd2Android.R;
 
 public class CardsAdapter extends ArrayAdapter<Card> {
 
+    /**
+     * CardsAdapter dient als een custom weergave van de listItems in de ListView
+     * @param context
+     */
     public CardsAdapter(Context context) {
         super(context, 0);
     }

@@ -51,7 +51,13 @@ public class VolleySingleton {
         };
     }
 
-
+    /**
+     * getInstance maakt de singelton aan wanneer die nog niet geinstantieerd is en geeft hem terug.
+     * Wanneer die wel geinstantieerd is geeft die hem alleen terug.
+     *
+     * @param context
+     * @return
+     */
     public static synchronized VolleySingleton getInstance(Context context) {
         if (volleySingleton == null) {
             volleySingleton = new VolleySingleton(context);
@@ -59,6 +65,11 @@ public class VolleySingleton {
         return volleySingleton;
     }
 
+    /**
+     * addToRequestQueue voegt een request toe aan de requestQueue
+     *
+     * @param req
+     */
     public void addToRequestQueue(Request req) {
         getRequestQueue().add(req);
     }

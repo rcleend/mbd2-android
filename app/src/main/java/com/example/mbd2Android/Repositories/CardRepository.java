@@ -27,18 +27,32 @@ public class CardRepository {
 
     private List<Card> allCards;
 
+    /**
+     * de CardRepository is een extra abstractielaag wat dient voor interactie met de Card data.
+     * @param application
+     */
     public CardRepository(Application application) {
         this.sharedPreferences = application.getSharedPreferences(application.getResources().getString(R.string.myPreferences), Context.MODE_PRIVATE);
         this.volleySingleton = VolleySingleton.getInstance(application);
         this.allCards = new ArrayList<>();
     }
 
+    /**
+     * VolleyResponseListener is een interface wat als callback funtioneert wanneer volley klaar is met een requestt.
+     */
     public interface VolleyResponseListener {
         void onError(VolleyError error);
 
         void onResponse(Object response);
     }
 
+    /**
+     * getCardsFromApi instantieert een JsonArrayRequest waarin de kaarten worden opgehaald.
+     * Deze request wordt aan de volleySingleton asynchrone requestQueue meegegeven.
+     *
+     * @param page
+     * @param listener
+     */
     public void getCardsFromApi(int page, final VolleyResponseListener listener) {
         int pageLimit = sharedPreferences.getInt("cardLimit", 12);
         String parameters = "?page=" + page + "&limit=" + pageLimit;
@@ -48,6 +62,14 @@ public class CardRepository {
     }
 
 
+    /**
+     * createNewJsonArrayRequest creeert de nieuwe JsonArrayRequest.
+     * De onResponse methode wordt uitgevoerd wanneer de request klaar is.
+     *
+     * @param url
+     * @param listener
+     * @return
+     */
     private JsonArrayRequest createNewJsonArrayRequest(String url, final VolleyResponseListener listener) {
         return new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
@@ -67,6 +89,12 @@ public class CardRepository {
                 });
     }
 
+    /**
+     * pareJSonArrayResponse zet de JSONArray om tot een List<Card>
+     *
+     * @param responseArray
+     * @return
+     */
     private List<Card> parseJsonArrayResponse(JSONArray responseArray) {
         List<Card> cardList = new ArrayList<>();
         try {
@@ -81,6 +109,12 @@ public class CardRepository {
         return cardList;
     }
 
+    /**
+     * createCardFromJson zet een JSONObject om tot een Card
+     *
+     * @param jsonCard
+     * @return
+     */
     private Card createCardFromJson(JSONObject jsonCard) {
         Card card;
         try {
