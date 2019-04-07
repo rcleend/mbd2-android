@@ -1,17 +1,17 @@
 package com.example.mbd2Android.Models;
 
 public class Card {
-    private String id;
+    private int id;
     private String name;
     private String imageUrl;
 
-    public Card(String id, String name, String imageUrl) {
+    public Card(int id, String name, String imageUrl) {
         this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 

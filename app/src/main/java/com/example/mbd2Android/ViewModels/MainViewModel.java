@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.android.volley.VolleyError;
 import com.example.mbd2Android.Models.Card;
+import com.example.mbd2Android.R;
 import com.example.mbd2Android.Repositories.CardRepository;
 
 import org.json.JSONArray;
@@ -69,7 +70,7 @@ public class MainViewModel extends AndroidViewModel {
     private Card createCardFromJson(JSONObject jsonCard) {
         Card card;
         try {
-            String id = jsonCard.getString("id");
+            int id = jsonCard.getInt("multiverseid");
             String name = jsonCard.getString("name");
             String imageUrl = jsonCard.getString("imageUrl");
             card = new Card(id, name, imageUrl);
@@ -82,8 +83,8 @@ public class MainViewModel extends AndroidViewModel {
 
     public Intent createSharingIntent() {
         String name = selectedCard.getValue().getName();
-        String imageUrl = selectedCard.getValue().getImageUrl();
-        String message = "Look at this MTG card! " + name + ":\n" + imageUrl;
+        String url = getApplication().getResources().getString(R.string.shareUrl) + selectedCard.getValue().getId();
+        String message = "Look at this MTG card! " + name + ":\n" + url;
 
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
@@ -91,6 +92,9 @@ public class MainViewModel extends AndroidViewModel {
 
         return sharingIntent;
     }
+
+
+
 
     public MutableLiveData<Card> getSelectedCard() {
         return this.selectedCard;

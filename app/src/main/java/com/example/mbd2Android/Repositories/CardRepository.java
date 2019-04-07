@@ -3,6 +3,8 @@ package com.example.mbd2Android.Repositories;
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -11,7 +13,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
+import com.example.mbd2Android.MainActivity;
 import com.example.mbd2Android.Models.Card;
+import com.example.mbd2Android.R;
 import com.example.mbd2Android.Utils.RequestQueueSingleton;
 
 import org.json.*;
@@ -22,17 +26,21 @@ import java.util.List;
 
 public class CardRepository {
 
-    private int pageLimit = 12;
+    private int pageLimit;
 
     private RequestQueueSingleton requestQueueSingleton;
     private LiveData<List<Card>> cards;
 
     public CardRepository(Application application) {
+        SharedPreferences sharedPreferences = application.getSharedPreferences(application.getResources().getString(R.string.myPreferences), Context.MODE_PRIVATE);
         this.requestQueueSingleton = RequestQueueSingleton.getInstance(application);
+
+        this.pageLimit = sharedPreferences.getInt("cardLimit", 12);
     }
 
     public interface VolleyResponseListener {
         void onError(VolleyError error);
+
         void onResponse(Object response);
     }
 

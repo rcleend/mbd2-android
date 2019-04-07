@@ -60,7 +60,7 @@ public class DetailFragment extends Fragment {
     private void setImage(Card card, NetworkImageView cardThumbnail) {
         final String url = card.getImageUrl();
         ImageLoader imageLoader = RequestQueueSingleton.getInstance(getContext()).getImageLoader();
-        imageLoader.get(url, ImageLoader.getImageListener(cardThumbnail, android.R.drawable.ic_menu_report_image, android.R.drawable.ic_dialog_alert));
+        imageLoader.get(url, ImageLoader.getImageListener(cardThumbnail, R.drawable.mtg_back, android.R.drawable.ic_dialog_alert));
         cardThumbnail.setImageUrl(url, imageLoader);
     }
 
